@@ -18,12 +18,19 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".message").textContent = "NO NUMBER";
   } else if (guess > number) {
     document.querySelector(".message").textContent = "too high!!";
-    let score = document.querySelector(".score").textContent;
+    document.querySelector(".score").textContent =
+      document.querySelector(".score").textContent - 1;
     if (document.querySelector(".score").textContent < 1) {
-      document.querySelector(".message").textContent = "You got lose the game";
+      document.querySelector(".message").textContent = "You got lost the game";
+      document.querySelector(".score").textContent = 0;
     }
   } else if (guess < number) {
     document.querySelector(".message").textContent = "too low!!";
+    document.querySelector(".score").textContent =
+      document.querySelector(".score").textContent - 1;
+    if (document.querySelector(".score").textContent < 1) {
+      document.querySelector(".message").textContent = "You got lost the game";
+      document.querySelector(".score").textContent = 0;
+    }
   }
 });
-console.log(score);
