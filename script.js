@@ -69,7 +69,7 @@ btnHold.addEventListener("click", function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
 
   //2.check if the score >= 100
-  if (score[activePlayer] >= 20) {
+  if (score[activePlayer] >= 100) {
     //finish the game
     playing = false;
     diceEL.classList.add("hidden");
@@ -102,6 +102,7 @@ btnNew.addEventListener("click", function () {
     diceEL.classList.add("hidden");
     score[0] = 0;
     score[1] = 0;
+    currentScore = 0;
   } else {
     //from gaming page
     diceEL.classList.add("hidden");
@@ -112,5 +113,6 @@ btnNew.addEventListener("click", function () {
     currentScore1EL.textContent = 0;
     score[0] = 0;
     score[1] = 0;
+    currentScore = 0;
   }
 });
