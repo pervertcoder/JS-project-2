@@ -84,3 +84,33 @@ btnHold.addEventListener("click", function () {
     switchPlayer();
   }
 });
+
+btnNew.addEventListener("click", function () {
+  console.log("btn-re-roll clicked");
+  //from winning page
+  if (!playing) {
+    playing = true;
+    document
+      .querySelector(`.player--${activePlayer}`)
+      .classList.remove("player--winner");
+    activePlayer = 0;
+    document
+      .querySelector(`.player--${activePlayer}`)
+      .classList.add("player--active");
+    score0EL.textContent = 0;
+    score1EL.textContent = 0;
+    diceEL.classList.add("hidden");
+    score[0] = 0;
+    score[1] = 0;
+  } else {
+    //from gaming page
+    diceEL.classList.add("hidden");
+    activePlayer = 0;
+    score0EL.textContent = 0;
+    score1EL.textContent = 0;
+    currentScore0EL.textContent = 0;
+    currentScore1EL.textContent = 0;
+    score[0] = 0;
+    score[1] = 0;
+  }
+});
