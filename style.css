@@ -35,6 +35,9 @@ main {
   border-radius: 9px;
   overflow: hidden;
   display: flex;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* margin-top: 10%; */
 }
 
 .player {
@@ -169,21 +172,64 @@ main {
 .hidden {
   display: none;
 }
+/* .middleUI {
+  background-color: black;
+  width: 10%;
+  display: none;
+} */
 
 @media (max-width: 431px) {
   main {
     flex-direction: column;
+    overflow: visible;
   }
   .player {
-    height: 50%;
     display: block;
+    padding: 0;
   }
+
   .name {
     position: relative;
     top: 1px;
-    color: red;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    /* color: red; */
   }
   .btn {
-    display: none;
+    /* display: none; */
   }
+  .current {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .score {
+    text-align: center;
+  }
+  .btn--new {
+    top: 61rem;
+    left: 6rem;
+    width: 100px;
+    height: 100px;
+  }
+  .btn--roll {
+    top: 61rem;
+    left: 21.5rem;
+    width: 100px;
+    height: 100px;
+  }
+  .btn--hold {
+    top: 61rem;
+    left: 37rem;
+    width: 100px;
+    height: 100px;
+  }
+
+  /* .middleUI {
+    width: 100rem;
+    height: 19%;
+    background-color: black;
+    display: block;
+    margin: auto;
+  } */
 }

@@ -113,6 +113,6 @@ btnNew.addEventListener("click", function () {
     currentScore1EL.textContent = 0;
     score[0] = 0;
     score[1] = 0;
-    currentScore = 0;
+    // currentScore = 0;
   }
 });
