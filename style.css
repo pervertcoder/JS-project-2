@@ -179,6 +179,9 @@ main {
 } */
 
 @media (max-width: 391px) {
+  body {
+    position: relative;
+  }
   main {
     flex-direction: column;
     overflow: visible;
@@ -223,6 +226,12 @@ main {
     left: 33rem;
     width: 100px;
     height: 100px;
+  }
+  .dice {
+    position: absolute;
+    left: 50%;
+    top: -11.5rem;
+    height: 10rem;
   }
 
   /* .middleUI {
