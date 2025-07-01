@@ -178,7 +178,7 @@ main {
   display: none;
 } */
 
-@media (max-width: 431px) {
+@media (max-width: 391px) {
   main {
     flex-direction: column;
     overflow: visible;
@@ -214,13 +214,13 @@ main {
   }
   .btn--roll {
     top: 61rem;
-    left: 21.5rem;
+    left: 19.5rem;
     width: 100px;
     height: 100px;
   }
   .btn--hold {
     top: 61rem;
-    left: 37rem;
+    left: 33rem;
     width: 100px;
     height: 100px;
   }
